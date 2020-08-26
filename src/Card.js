@@ -4,11 +4,16 @@ import Title from './Title'
 import Profile from './Profile'
 import Message from './Message'
 import Icons from './Icons'
+import TweetProfile from './TweetProfile';
+import TweetProfilePic from './TweetProfilePic'
 import './App.css'
 
 const Card = () => {
   return(
     <div className="container">
+    <hr/>
+    <TweetProfile /> <TweetProfilePic />
+    
      <div className="card">
      <Logo /> 
      <Title />
@@ -21,7 +26,7 @@ const Card = () => {
     <Icons />
     </div>
    
-
+    <hr/>
     </div>
    
   

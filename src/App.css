@@ -1,44 +1,64 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.container{
+
+.container {
   display: flex;
   flex-direction: column;
-  height: 500px;
-  width: 700px;
-  
+  height: 100%;
+  width: 830px;
+
+  justify-content: flex-end;
   margin: auto;
   margin-top: 20px;
-  
+}
+.profilepic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  height: 90px;
+  width: 90px;
+  align-self: flex-start;
+  margin-left: 10px;
+  margin-top: -90px;
 }
 
 .card {
   display: flex;
+
+  align-self: flex-end;
+
+  margin-top: 20px;
   height: 500px;
-  width: 100%;
-  margin: auto;
+  width: 700px;
+
   border-radius: 5px 5px 0px 0px;
-  
-  
-  
   background-color: #f49a4e;
-  
 }
-.logo{
+
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#000;
+  background-color: #000;
   color: #fff;
   width: 120px;
   height: 80px;
   margin-left: 5px;
   margin-top: 5px;
 }
-.title{
-  
+
+.logo h1 {
+  padding: 0 10px;
+}
+
+.title {
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -46,25 +66,21 @@
   font-weight: bold;
   justify-content: center;
   align-items: center;
-  
-  
-
-  
 }
-.profile{
+
+.profile {
   display: flex;
   align-self: flex-end;
   align-items: center;
-  
+
   justify-content: flex-end;
-  
+
   flex-direction: row;
-  background-color:#fff ;
+  background-color: #fff;
   height: 50px;
   width: 300px;
   margin-bottom: 5px;
   margin-right: 5px;
-
 }
 
 .profile h2 {
@@ -72,7 +88,12 @@
   font-size: 17px;
   margin: auto;
 }
-.message{
+.profile img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.message {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
@@ -80,39 +101,57 @@
   padding-left: 10px;
   border-radius: 0px 0px 5px 5px;
   line-height: 1.8em;
-  height: 300px;
+  height: 100px;
   border: 1px solid #ccc;
-  width: 100%;
-  
-  
-  
-  
-
-
+  width: 700px;
+  align-self: flex-end;
 }
 
-.message a{
+.message a {
   text-decoration: none;
   color: #b6b8b8;
-  
-  
 }
 
-.fa{
+.fa {
   font-size: 20px;
   padding-right: 50px;
   padding-top: 30px;
-  color: #a6a199
-
-  
-  
+  color: #a6a199;
 }
 
-.fa-heart{
-  color:#F34213;
-  
+.icon {
+  width: 700px;
+  align-self: flex-end;
+  padding-bottom: 10px;
 }
 
-.fa-retweet{
-  color:#94CC20;
+.fa-heart {
+  color: #f34213;
+}
+
+.fa-retweet {
+  color: #94cc20;
+}
+
+.tweetprofile {
+  display: flex;
+
+  height: 100px;
+  width: 700px;
+  align-self: flex-end;
+  flex-direction: column;
+  line-height: 1.6em;
+  padding-top: 10px;
+}
+
+.tweetprofile h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+hr {
+  color: #ccc;
+  height: 1px;
+  border: none;
+  background-color: #ccc;
 }
